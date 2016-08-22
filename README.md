@@ -4,7 +4,7 @@ Connect4 game web service using dropwizard
 #1. To start a new game - 
 
 REQUEST
- REQUEST URI : http://<host>/api/games/new
+ REQUEST URI : http://host/api/games/new
  HTTP Method  : POST
  Content-Type : application/json
  Data payload : {
@@ -24,13 +24,13 @@ RESPONSE
   "player1Id": player1Id
   "player2Id": player2Id
   "gameGrid": 2Dgrid array
-  "gameLink": "http://<host>/api/games/<gameId>/player/<playerId>"
+  "gameLink": "http://host/api/games/<gameId>/player/<playerId>"
   }
 
 #2. To continue play the game - 
 
 REQUEST
-  REQUEST URI : http://<host>/api/games/<gameId>/player/<playerId>?insert_in_column=3
+  REQUEST URI : http://host/api/games/<gameId>/player/<playerId>?insert_in_column=3
   HTTP Method  : PUT
   Content-Type : application/json
    
@@ -45,7 +45,7 @@ REQUEST
     "player1Id": player1Id
     "player2Id": player2Id
     "gameGrid": 2Dgrid array
-    "gameLink": "http://<host>/api/games/<gameId>/player/<nextplayerId>"
+    "gameLink": "http://host/api/games/<gameId>/player/<nextplayerId>"
     }
     if the game is over
     {
@@ -55,14 +55,14 @@ REQUEST
     "player1Id": player1Id
     "player2Id": player2Id
     "gameGrid": 2Dgrid array
-    "gameLink":  "http://<host>/api/games/<gameId>"
+    "gameLink":  "http://host/api/games/<gameId>"
     }
     
  
 #3. To view game status - 
 
 REQUEST
-  REQUEST URI : http://<host>/api/games/<gameId>
+  REQUEST URI : http://host/api/games/<gameId>
   HTTP Method  : PUT
   Content-Type : application/json
    
@@ -77,7 +77,7 @@ REQUEST
     "player1Id": player1Id
     "player2Id": player2Id
     "gameGrid": 2Dgrid array
-    "gameLink": "http://<host>/api/games/<gameId>/player/<nextplayerId>"
+    "gameLink": "http://host/api/games/<gameId>/player/<nextplayerId>"
     }
     if the game is over
     {
@@ -87,7 +87,7 @@ REQUEST
     "player1Id": player1Id
     "player2Id": player2Id
     "gameGrid": 2Dgrid array
-    "gameLink":  "http://<host>/api/games/<gameId>"
+    "gameLink":  "http://host/api/games/<gameId>"
     }
 
 

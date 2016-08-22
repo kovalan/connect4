@@ -1,7 +1,7 @@
 # connect4
 Connect4 game web service using dropwizard
 
-1. To start a new game - 
+#1. To start a new game - 
 
 REQUEST
  REQUEST URI : http://<host>/api/games/new
@@ -27,7 +27,7 @@ RESPONSE
   "gameLink": "http://<host>/api/games/<gameId>/player/<playerId>"
   }
 
-2. To continue play the game - 
+#2. To continue play the game - 
 
 REQUEST
   REQUEST URI : http://<host>/api/games/<gameId>/player/<playerId>?insert_in_column=3
@@ -59,7 +59,7 @@ REQUEST
     }
     
  
-3. To view game status - 
+#3. To view game status - 
 
 REQUEST
   REQUEST URI : http://<host>/api/games/<gameId>

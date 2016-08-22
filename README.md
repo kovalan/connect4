@@ -2,6 +2,7 @@
 Connect4 game web service using dropwizard
 
 1. To start a new game - 
+
 REQUEST
  REQUEST URI : http://<host>/api/games/new
  HTTP Method  : POST
@@ -27,6 +28,7 @@ RESPONSE
   }
 
 2. To continue play the game - 
+
 REQUEST
   REQUEST URI : http://<host>/api/games/<gameId>/player/<playerId>?insert_in_column=3
   HTTP Method  : PUT
@@ -58,6 +60,7 @@ REQUEST
     
  
 3. To view game status - 
+
 REQUEST
   REQUEST URI : http://<host>/api/games/<gameId>
   HTTP Method  : PUT
